@@ -6,8 +6,8 @@ module.exports = function fetchuser(req, res, next) {
     return res.status(401).json({ error: "Access denied. No token provided." });
   }
   try {
-    const data = jwt.verify(token, process.env.JWT_SECRET);
-    req.user = data.user; // make sure your JWT payload has { user: { id } }
+    const data = jwt.verify(token, process.env.JWT_SECRET || "IamMalayPandya");
+    req.user = data.user;
     next();
   } catch (err) {
     return res.status(401).json({ error: "Invalid token" });

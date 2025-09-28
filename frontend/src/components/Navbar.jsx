@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-container">
         <div className="logo">
-          <h1>My App</h1>
+          <h1>Online Clipboard</h1>
         </div>
 
         {/* Hamburger Icon */}
