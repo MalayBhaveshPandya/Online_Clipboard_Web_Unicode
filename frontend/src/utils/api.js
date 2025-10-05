@@ -28,9 +28,11 @@ api.interceptors.request.use(
 );
 
 export const clipboardAPI = {
-  createClipboard: async (text, tags = []) => {
+  createClipboard: async (text, tags = [], recipientUsername = null) => {
     try {
-      const response = await api.post('/clipboard', { text, tags });
+      const payload = { text, tags };
+      if (recipientUsername) payload.recipientUsername = recipientUsername;
+      const response = await api.post('/clipboard', payload);
       return response.data;
     } catch (error) {
       throw error.response?.data?.error || 'Failed to share content';

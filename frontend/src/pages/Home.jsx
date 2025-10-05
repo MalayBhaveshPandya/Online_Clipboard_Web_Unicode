@@ -54,7 +54,7 @@ export default function Home() {
 
   return (
     <div className="home-container">
-      <div className="home-content">
+      <div className="page-box home-content">
         {/* <h1 className="home-title">Online Clipboard</h1> */}
         <p className="home-subtitle">Share and retrieve content instantly</p>
 

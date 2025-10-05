@@ -8,6 +8,7 @@ import axios from "axios";
 import { Toaster } from "react-hot-toast";
 import { UserContextProvider } from "../context/UserContext";
 import Dashboard from "./pages/Dashboard";
+import About from "./pages/About";
 import PrivateRoute from "./components/PriateRoute";
 
 axios.defaults.baseURL = "http://localhost:3000/api/auth";
@@ -30,6 +31,7 @@ function App() {
             </PrivateRoute>
           }
         />
+        <Route path="/about" element={<About />} />
       </Routes>
     </UserContextProvider>
   );

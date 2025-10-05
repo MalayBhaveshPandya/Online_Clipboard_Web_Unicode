@@ -23,6 +23,18 @@ body {
   padding: 20px;
 }
 
+/* Page box for centered card layout (register/login style) */
+.page-box {
+    width: 100%;
+    max-width: 720px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+
+}
+
 .dashboard-title {
   text-align: center;
   margin-bottom: 20px;

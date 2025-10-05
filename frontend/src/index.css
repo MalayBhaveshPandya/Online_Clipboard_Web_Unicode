@@ -67,3 +67,14 @@ main {
   flex: 1;
   padding: 20px;
 }
+
+/* Page box: reusable centered card matching register/login look */
+.page-box {
+  width: 100%;
+  max-width: 760px;
+  margin: 24px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
