@@ -45,6 +45,7 @@ export default function Login() {
   return (
     <div className="login-box">
       <form onSubmit={loginUser}>
+        <h2>Login</h2>
         <label>Email</label>
         <input
           type="email"

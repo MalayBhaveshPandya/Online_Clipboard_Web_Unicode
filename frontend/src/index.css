@@ -1,80 +1,13 @@
-/* Root defaults */
-:root {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color: #333;
-  background-color: #f4f4f4;
-
+body{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0ea178;
 }
-
-/* Reset some defaults */
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-weight: bold;
-  color: #222;
-}
-
-/* Links */
-a {
-  font-weight: 500;
-  color: #007bff;
-  text-decoration: none;
-}
-a:hover {
-  color: #0056b3;
-}
-
-/* Buttons */
-button {
-  border-radius: 6px;
-  border: 1px solid #007bff;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-  transition: background 0.25s, border-color 0.25s;
-}
-
-button:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 3px solid #80bdff;
-  outline-offset: 2px;
-}
-
-/* Layout helper (keeps content below fixed navbar) */
-main {
-  flex: 1;
-  padding: 20px;
-}
-
-/* Page box: reusable centered card matching register/login look */
-.page-box {
-  width: 100%;
-  max-width: 760px;
-  margin: 24px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
 }

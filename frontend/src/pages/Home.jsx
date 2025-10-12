@@ -55,8 +55,10 @@ export default function Home() {
   return (
     <div className="home-container">
       <div className="page-box home-content">
-        {/* <h1 className="home-title">Online Clipboard</h1> */}
         <p className="home-subtitle">Share and retrieve content instantly</p>
+        <p className="home-description">
+          Login to <a href="/login">your account</a> to access all features.
+        </p>
 
         {/* Share Section */}
         <div className="section">

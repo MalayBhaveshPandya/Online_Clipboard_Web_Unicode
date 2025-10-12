@@ -1,75 +1,41 @@
-/* General Page Styles */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-/* Login Box */
 .login-box {
-  width: 350px;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #17e991;
 }
-
-.login-box h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+.login-box h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
 }
-
-/* Form Fields */
-form {
-  display: flex;
-  flex-direction: column;
+.login-box form {
+    display: flex;
+    flex-direction: column;
 }
-
-label {
-  font-size: 14px;
-  color: #333;
-  margin-bottom: 5px;
+.login-box label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: black;
 }
-
-input {
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 14px;
+.login-box input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #53ebac;
 }
-
-input:focus {
-  border-color: #007bff;
-  outline: none;
+.login-box button {
+    padding: 10px;
+    background-color: #0aac76;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
 }
-
-/* Button */
-.btn {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background: #007bff;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background: #0056b3;
-}
-
-/* Responsive */
-@media (max-width: 480px) {
-  .login-box {
-    width: 90%;
-    padding: 15px;
-  }
-}
-

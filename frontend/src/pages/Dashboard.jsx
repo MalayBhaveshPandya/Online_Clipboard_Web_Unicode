@@ -115,7 +115,7 @@ export default function Dashboard() {
         {error && (
           <div className="error-message">
             <p>
-              <strong>Error:</strong> {error}
+              <strong>❌Error:</strong> {error}
             </p>
           </div>
         )}

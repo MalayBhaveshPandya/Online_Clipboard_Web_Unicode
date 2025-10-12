@@ -15,7 +15,7 @@ export default function About() {
 
         <h3>Features</h3>
         <ul>
-          <li>Create temporary clipboards with expiry</li>
+          <li>Create temporary clipboards with expiry ensuring privacy</li>
           <li>Optional recipient-only delivery</li>
           <li>Copy retrieval codes to clipboard</li>
           <li>Simple, privacy-minded design</li>
